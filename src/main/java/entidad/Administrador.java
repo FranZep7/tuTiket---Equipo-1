@@ -47,7 +47,7 @@ public class Administrador {
     public void setUsuario(String usuario) { 
         this.usuario = usuario; 
     }
-    public String getContrana() { 
+    public String getContrasena() { 
         return contra; 
     }
     public void setContrasena(String contra) { 

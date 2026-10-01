@@ -15,11 +15,11 @@ public class Promotora {
     private String colonia;
     private String ciudad;
     private String estado;
-    private int numero;
+    private String numero;
 
     public Promotora() {}
 
-    public Promotora(String nombreComercial, String calle, String colonia, String ciudad, String estado, int numero) {
+    public Promotora(String nombreComercial, String calle, String colonia, String ciudad, String estado, String numero) {
         this.nombreComercial = nombreComercial;
         this.calle = calle;
         this.colonia = colonia;
@@ -64,10 +64,10 @@ public class Promotora {
     public void setEstado(String estado) {
         this.estado = estado; 
     }
-    public int getNumero() {
+    public String getNumero() {
         return numero;
     }
-    public void setNumero(int numero) {
+    public void setNumero(String numero) {
         this.numero = numero;
     }
     

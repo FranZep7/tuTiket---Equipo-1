@@ -49,7 +49,7 @@ public class Compra {
     public LocalDateTime getFechaHora() {
         return fechaHora;
     }
-    public void setFecha(LocalDateTime fechaHora) {
+    public void setFechaHora(LocalDateTime fechaHora) {
         this.fechaHora = fechaHora;
     }
     public double getTotal() { 
@@ -57,6 +57,12 @@ public class Compra {
     }
     public void setTotal(double total) {
         this.total = total;
+    }
+    public String getEstado() {
+        return estado;
+    }
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 
     @Override
