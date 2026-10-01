@@ -15,15 +15,17 @@ public class Promotora {
     private String colonia;
     private String ciudad;
     private String estado;
+    private int numero;
 
     public Promotora() {}
 
-    public Promotora(String nombreComercial, String calle, String colonia, String ciudad, String estado) {
+    public Promotora(String nombreComercial, String calle, String colonia, String ciudad, String estado, int numero) {
         this.nombreComercial = nombreComercial;
         this.calle = calle;
         this.colonia = colonia;
         this.ciudad = ciudad;
         this.estado = estado;
+        this.numero = numero;
     }
 
     public int getId() { 
@@ -62,6 +64,13 @@ public class Promotora {
     public void setEstado(String estado) {
         this.estado = estado; 
     }
+    public int getNumero() {
+        return numero;
+    }
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+    
      @Override
     public String toString() {
         return "ID de la Promotora" + id + ", Nombre Comercial: " + nombreComercial;
