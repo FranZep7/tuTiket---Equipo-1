@@ -20,7 +20,7 @@ public class Compra {
 
     public Compra() {}
 
-    public Compra(int clienteId, int boletoId, LocalDateTime fechaHora, double total) {
+    public Compra(int clienteId, int boletoId, LocalDateTime fechaHora, double total, String estado) {
         this.clienteId = clienteId;
         this.boletoId = boletoId;
         this.fechaHora = fechaHora;

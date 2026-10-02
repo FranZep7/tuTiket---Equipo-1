@@ -7,13 +7,13 @@ public class Cliente {
     private String nombres;
     private String apellidoPaterno;
     private String apellidoMaterno;
-    private String fechaNacimiento;
+    private LocalDate fechaNacimiento;
     private String usuario;
     private String contra;
 
     public Cliente() {}
 
-    public Cliente(String nombres, String apellidoPaterno, String apellidoMaterno, String fechaNacimiento, String usuario, String contra) {
+    public Cliente(String nombres, String apellidoPaterno, String apellidoMaterno, LocalDate fechaNacimiento, String usuario, String contra) {
         this.nombres = nombres;
         this.apellidoPaterno = apellidoPaterno;
         this.apellidoMaterno = apellidoMaterno;
@@ -58,10 +58,10 @@ public class Cliente {
     public void setApellidoMaterno(String apellidoMaterno) {
         this.apellidoMaterno = apellidoMaterno;
     }
-    public String getFechaNacimiento() { 
+    public LocalDate getFechaNacimiento() { 
         return fechaNacimiento;
     }
-    public void setFechaNacimiento(String fechaNacimiento) { 
+    public void setFechaNacimiento(LocalDate fechaNacimiento) { 
         this.fechaNacimiento = fechaNacimiento;
     }
 

@@ -128,7 +128,7 @@ public class ClienteDAO implements IClienteDAO{
         c.setNombres(rs.getString("nombres"));
         c.setApellidoPaterno(rs.getString("apellido_paterno"));
         c.setApellidoMaterno(rs.getString("apellido_materno"));
-        c.setFechaNacimiento(rs.getString("fecha_nacimiento"));
+        c.setFechaNacimiento(rs.getDate("fecha_nacimiento").toLocalDate());
         return c;
     }
 }
